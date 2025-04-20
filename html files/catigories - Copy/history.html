@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History - PurpleBook</title>
+    <link rel="stylesheet" href="/css files/categories.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="main-logo">
+                <img src="/image/Untitled991 design.gif" alt="a book">
+                <img id="logo" src="/image/purple book.png" alt="page logo">
+            </div>
+            <div id="list">
+                <a href="/html files/main page - Copy.html" class="nav-link">Home</a>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#">Categories <i class='bx bx-chevron-down'></i></a>
+                    <div class="dropdown-menu">
+                        <a href="/html files/catigories - Copy/novels.html" target="_blank">Novels</a>
+                        <a href="/html files/catigories - Copy/history.html" target="_blank">History</a>
+                        <a href="/html files/catigories - Copy/educational.html" target="_blank">Educational</a>
+                        <a href="/html files/catigories - Copy/self-development.html" target="_blank">Self-Development</a>
+                        <a href="/html files/catigories - Copy/kids.html" target="_blank">Kids</a>
+                    </div>
+                </div>
+                <a href="about.html" target="_blank" class="nav-link">About</a>
+            </div>
+            <nav class="auth-buttons"> 
+                <button class="login-btn" onclick="openPopup('login')">Log in</button>
+                <button class="signup-btn" onclick="openPopup('sign up')">Sign up</button>
+            </nav>                  
+        </div>
+    </header>
+    <div class="body" id="popup">
+        <div class="content">
+            <div class="form-decoration">
+                <img src="/image/for form.png" alt="Book decoration">
+                <div class="welcome-message">
+                    <h3 id="welcome-title">Welcome to our bookstore</h3>
+                    <p id="welcome-text">Join our community of book lovers and discover amazing stories.</p>
+                </div>
+             </div>
+             <form target="_blank" class="modern-form">
+                <button id="close" onclick="closePopup()"><i class='bx bx-window-close'></i></button>
+                 <h2 id="form-title">Sign up</h2>
+                 <div class="input-box">
+                     <input type="text" placeholder="Username" required>
+                     <i class='bx bxs-user'></i>
+                 </div>      
+                 <div class="input-box" id="email" style="display: none;">
+                     <input type="email" placeholder="Your email" required>
+                     <i class='bx bxs-envelope'></i>
+                 </div>    
+                 <div class="input-box">
+                     <input type="password" placeholder="Password" required>
+                     <i class='bx bxs-lock-open'></i>
+                 </div>  
+                 <div id="check">
+                         <button class="switch-btn" onclick="switchForm()">Already have an account? Log in</button>
+                 </div>   
+                 <button id="submit-btn" type="submit">Sign up</button>  
+             </form>
+        </div>
+     </div>
+    <section>
+        <div class="title">
+            <h1>PurpleBook</h1>
+            <p>Step into a place where the soft whispers of old books and the scent of fresh pages call you to discover new adventures. Welcome to PurpleBook, where every shelf leads to an imaginary world.</p>
+            <img src="/image/Untitled11 design.png" alt="PurpleBook">
+            <button onclick="openPopup('sign up')">Register Now</button>
+        </div>
+        <div class="home-img">
+            <img class="book" src="/image/Untitled designm.png" alt="Book Image">
+            <img class="back" src="/image/magicpattern-blob-1741119966301.png" alt="Background">
+        </div>
+    </section>
+    <section id="history">
+        <h1>History</h1>
+        <img class="i2" src="/image/magicpattern-blob-1741121154922.png" alt="">
+        <img class="i3" src="/image/Untitled533 design.png" alt="">
+        <img class="i1" src="/image/magicpattern-blob-1741107303436.png" alt="">
+    </section>
+    <!-- Gallery Section -->
+    <section>
+        <div class="gallery">
+            <img src="/image/hsitory/14 Books About Lesser-Known Women's History.jpeg" alt="Book 1">
+        </div>
+        <div class="gallery">
+            <img src="/image/hsitory/20 Books About Women in History That You Won’t Be Able To Put Down.jpeg" alt="Book 2">
+        </div>
+        <div class="gallery">
+            <img src="/image/hsitory/20c731e7-7d2a-45c0-89cc-b0b04e46c5f9.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/hsitory/75 Books that Will Make You Smarter (1).jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/hsitory/A 5,000 Year Timeline of Chinese History.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/hsitory/A Brief History of Intelligence_ Evolution, AI, and the Five Breakthroughs That Made Our Brains.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/hsitory/A Brief History of Misogyny (Brief Histories)_ The World's Oldest Prejudice.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/hsitory/A Brief History of Time.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/hsitory/b69fdfba-5a46-4714-9646-888a7f4d38a8.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/hsitory/Burning the Books_ A History of the Deliberate Destruction of Knowledge [Book].jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/hsitory/Cleopatra and Nefertiti book.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/hsitory/Historical Nonfiction_ 30 of the Best Books in the Genre _ Book Riot.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/hsitory/How to Hide an Empire_ A History of the Greater United States [Book].jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/hsitory/Islamic Imperialism_ A History.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/hsitory/It's a Continent _ Unravelling Africa's history one country at a time ''We need this book_' SIMON REEVE by Astrid Madimba.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/hsitory/Lost Islamic History_ Reclaiming Muslim Civilization from the Past.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/hsitory/Nuns_ A History of Convent Life [Book].jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/hsitory/The 19 Best Nonfiction Books Of 2014.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/hsitory/The Great Arab Conquests_ How the Spread of Islam Chang….jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/hsitory/The Last Mughal the fall of Delhi, 1857 - William Dalrymple_ 9780143102434.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/hsitory/The Lost River_ On The Trail of the Sarasvati.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/hsitory/The Secret History of the World [Book].jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/hsitory/The Secret History_ From the Pulitzer Prize-winning author of The Goldfinch.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/hsitory/The Theft of India_ The European Conquests of India, 14….jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/hsitory/‘A king could have commanded the worst atrocities on enemies and yet built awe-inspiring temples’.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About PurpleBook</h3>
+                <p>Your premier destination for discovering and purchasing books across all genres. We bring the world of literature to your fingertips.</p>
+                <div class="social-links">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-pinterest'></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="/html files/catigories - Copy/novels.html">Novels</a></li>
+                    <li><a href="/html files/catigories - Copy/history.html">History</a></li>
+                    <li><a href="/html files/catigories - Copy/educational.html">Educational</a></li>
+                    <li><a href="/html files/catigories - Copy/self-development.html">Self-Development</a></li>
+                    <li><a href="/html files/catigories - Copy/kids.html">Kids</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/html files/main page.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Best Sellers</a></li>
+                    <li><a href="#">Special Offers</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul class="contact-info">
+                    <li><i class='bx bx-map-pin'></i> 123 Book Street, Reading City</li>
+                    <li><i class='bx bx-phone'></i> +1 (555) 123-4567</li>
+                    <li><i class='bx bx-envelope'></i> info@purplebook.com</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 PurpleBook. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let isLogin = true;
+        function openPopup(type) {
+            isLogin = (type === 'login');
+            document.getElementById("form-title").textContent = isLogin ? "Login" : "Sign Up";
+            document.getElementById("email").style.display = isLogin ? "none" : "block";
+            document.getElementById("submit-btn").textContent = isLogin ? "Login" : "Sign Up";
+            document.querySelector(".switch-btn").textContent = isLogin ? "Don't have an account? Sign Up" : "Already have an account? Login";
+            
+            // Update welcome messages
+            document.getElementById("welcome-title").textContent = isLogin ? "Welcome back!" : "Welcome to our bookstore";
+            document.getElementById("welcome-text").textContent = isLogin ? 
+                "We're glad to see you again. Login to access your account." : 
+                "Join our community of book lovers and discover amazing stories.";
+                
+            document.getElementById("popup").classList.add("active");
+        }
+        function closePopup() {
+            document.getElementById("popup").classList.remove("active");
+        }
+        function switchForm() {
+            openPopup(isLogin ? 'signup' : 'login');
+        }
+        function toggleMenu() {
+            const menuList = document.getElementById("list");
+            menuList.classList.toggle("active");
+            
+            // Toggle dropdown menus
+            const dropdowns = document.querySelectorAll('.dropdown');
+            dropdowns.forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        }
+    </script>   
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css files/categories.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="main-logo">
+                <img src="/image/Untitled991 design.gif" alt="a book">
+                <img id="logo" src="/image/purple book.png" alt="page logo">
+            </div>
+            <div id="list">
+                <a href="/html files/main page - Copy.html" class="nav-link">Home</a>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#">Categories <i class='bx bx-chevron-down'></i></a>
+                    <div class="dropdown-menu">
+                        <a href="/html files/catigories - Copy/novels.html" target="_blank">Novels</a>
+                        <a href="/html files/catigories - Copy/history.html" target="_blank">History</a>
+                        <a href="/html files/catigories - Copy/educational.html" target="_blank">Educational</a>
+                        <a href="/html files/catigories - Copy/self-development.html" target="_blank">Self-Development</a>
+                        <a href="/html files/catigories - Copy/kids.html" target="_blank">Kids</a>
+                    </div>
+                </div>
+                <a href="about.html" target="_blank" class="nav-link">About</a>
+            </div>
+            <nav class="auth-buttons"> 
+                <button class="login-btn" onclick="openPopup('login')">Log in</button>
+                <button class="signup-btn" onclick="openPopup('sign up')">Sign up</button>
+            </nav>                  
+        </div>
+    </header>
+    <div class="body" id="popup">
+        <div class="content">
+            <div class="form-decoration">
+                <img src="/image/for form.png" alt="Book decoration">
+                <div class="welcome-message">
+                    <h3 id="welcome-title">Welcome to our bookstore</h3>
+                    <p id="welcome-text">Join our community of book lovers and discover amazing stories.</p>
+                </div>
+             </div>
+             <form target="_blank" class="modern-form">
+                <button id="close" onclick="closePopup()"><i class='bx bx-window-close'></i></button>
+                 <h2 id="form-title">Sign up</h2>
+                 <div class="input-box">
+                     <input type="text" placeholder="Username" required>
+                     <i class='bx bxs-user'></i>
+                 </div>      
+                 <div class="input-box" id="email" style="display: none;">
+                     <input type="email" placeholder="Your email" required>
+                     <i class='bx bxs-envelope'></i>
+                 </div>    
+                 <div class="input-box">
+                     <input type="password" placeholder="Password" required>
+                     <i class='bx bxs-lock-open'></i>
+                 </div>  
+                 <div id="check">
+                         <button class="switch-btn" onclick="switchForm()">Already have an account? Log in</button>
+                 </div>   
+                 <button id="submit-btn" type="submit">Sign up</button>  
+             </form>
+        </div>
+     </div>     
+    <section>
+    <div class="title">
+        <h1>PurpleBook</h1>
+        <p>Step into a place where the soft whispers of old books and the scent of fresh pages call you to discover new adventures.
+            Welcome to purple book where every shelf leads to an imaginary world.</p>
+            <img src="/image/Untitled11 design.png" alt="">
+        <button onclick="openPopup('sign up')">register now</button>
+    </div>
+    <div class="home-img">
+    <img class="book" src="/image/Untitled designm.png">
+    <img class="back" src="/image/magicpattern-blob-1741119966301.png">
+    </div>
+    </section>
+    <section id="novel">
+        <img src="/image/AdobeStock_433238463_Preview-removebg-preview.png" alt="">
+        <h1>Novels</h1>
+    </section>
+    <section>
+        <div class="gallery">
+            <img src="/image/novels/17 Best Love Story Books For Teens In 2025.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/novels/28 Modern Thrillers You Should Add to Your Reading List ASAP.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/novels/49398072.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/novels/51 Books That Are Guaranteed To Make You Cry.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/novels/51lkailf5ql.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/novels/90+ Books to Read Before They're Films.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/novels/All the Light We Cannot See by Anthony Doerr _ Waterstones.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/novels/Beautiful 2017 Book Cover Designs.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/novels/Credence by Penelope Douglas.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/novels/download (7).jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/novels/download (8).jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/novels/Girls On Fire by Robin Wasserman Book Review - Serenity You.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/novels/Where the Forest Meets the Stars.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/novels/When Nothing Else Matters • Katherine Jay.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/novels/Ugly Love by Colleen Hoover.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/novels/Twisted Lies_ the TikTok sensation! Fall into a world of addictive romance___.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/novels/Too Late.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/novels/This Editor-Approved Book Might Just Save You From Isolation Boredom.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/novels/Things We Left Behind (Knockemout, Book 3).jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/novels/Things We Hide From The Light_ the Sunday Times bestseller £5_50 paperback.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/novels/the tide.jpg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/novels/The Midnight Library_ The No_1 Sunday Times bestseller and worldwide phenomenon.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/novels/The Art of Holding On and Letting Go Novel.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/novels/Some Desperate Glory.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+         <div class="gallery">
+            <img src="/image/novels/it ends.jpg" alt="">
+            <div class="book-info"></div>
+        </div>
+         <div class="gallery">
+            <img src="/image/novels/Never Never_ A romantic suspense novel of love and fate.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+        <div class="gallery">
+            <img src="/image/novels/Reminders of Him_ A Novel.jpeg" alt="">
+            <div class="book-info"></div>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About PurpleBook</h3>
+                <p>Your premier destination for discovering and purchasing books across all genres. We bring the world of literature to your fingertips.</p>
+                <div class="social-links">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-pinterest'></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="/html files/catigories - Copy/novels.html">Novels</a></li>
+                    <li><a href="/html files/catigories - Copy/history.html">History</a></li>
+                    <li><a href="/html files/catigories - Copy/educational.html">Educational</a></li>
+                    <li><a href="/html files/catigories - Copy/self-development.html">Self-Development</a></li>
+                    <li><a href="/html files/catigories - Copy/kids.html">Kids</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/html files/main page.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Best Sellers</a></li>
+                    <li><a href="#">Special Offers</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul class="contact-info">
+                    <li><i class='bx bx-map-pin'></i> 123 Book Street, Reading City</li>
+                    <li><i class='bx bx-phone'></i> +1 (555) 123-4567</li>
+                    <li><i class='bx bx-envelope'></i> info@purplebook.com</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 PurpleBook. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let isLogin = true;
+        function openPopup(type) {
+            isLogin = (type === 'login');
+            document.getElementById("form-title").textContent = isLogin ? "Login" : "Sign Up";
+            document.getElementById("email").style.display = isLogin ? "none" : "block";
+            document.getElementById("submit-btn").textContent = isLogin ? "Login" : "Sign Up";
+            document.querySelector(".switch-btn").textContent = isLogin ? "Don't have an account? Sign Up" : "Already have an account? Login";
+            
+            // Update welcome messages
+            document.getElementById("welcome-title").textContent = isLogin ? "Welcome back!" : "Welcome to our bookstore";
+            document.getElementById("welcome-text").textContent = isLogin ? 
+                "We're glad to see you again. Login to access your account." : 
+                "Join our community of book lovers and discover amazing stories.";
+                
+            document.getElementById("popup").classList.add("active");
+        }
+        function closePopup() {
+            document.getElementById("popup").classList.remove("active");
+        }
+        function switchForm() {
+            openPopup(isLogin ? 'signup' : 'login');
+        }
+        function toggleMenu() {
+            const menuList = document.getElementById("list");
+            menuList.classList.toggle("active");
+            
+            // Toggle dropdown menus
+            const dropdowns = document.querySelectorAll('.dropdown');
+            dropdowns.forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        }
+    </script>   
+</body>
+</html>
