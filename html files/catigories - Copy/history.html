@@ -27,7 +27,7 @@
                         <a href="/html files/catigories - Copy/kids.html" target="_blank">Kids</a>
                     </div>
                 </div>
-                <a href="about.html" target="_blank" class="nav-link">About</a>
+                <a href="/html files/about.html" target="_blank" class="nav-link">About</a>
             </div>
             <nav class="auth-buttons"> 
                 <button class="login-btn" onclick="openPopup('login')">Log in</button>
@@ -69,8 +69,9 @@
     <section>
         <div class="title">
             <h1>PurpleBook</h1>
-            <p>Step into a place where the soft whispers of old books and the scent of fresh pages call you to discover new adventures. Welcome to PurpleBook, where every shelf leads to an imaginary world.</p>
-            <img src="/image/Untitled11 design.png" alt="PurpleBook">
+            <p>Step into a place where the soft whispers of old books and the scent of fresh pages call you to discover new adventures.
+                 Welcome to PurpleBook, where every shelf leads to an imaginary world.</p>
+                <img src="/image/Untitled11 design.png">
             <button onclick="openPopup('sign up')">Register Now</button>
         </div>
         <div class="home-img">
@@ -81,10 +82,9 @@
     <section id="history">
         <h1>History</h1>
         <img class="i2" src="/image/magicpattern-blob-1741121154922.png" alt="">
-        <img class="i3" src="/image/Untitled533 design.png" alt="">
+        <img class="i3" src="/image/magicpattern-blob-1745359096630.png" alt="">
         <img class="i1" src="/image/magicpattern-blob-1741107303436.png" alt="">
     </section>
-    <!-- Gallery Section -->
     <section>
         <div class="gallery">
             <img src="/image/hsitory/14 Books About Lesser-Known Women's History.jpeg" alt="Book 1">
@@ -239,39 +239,6 @@
             </div>
         </div>
     </footer>
-    <script>
-        let isLogin = true;
-        function openPopup(type) {
-            isLogin = (type === 'login');
-            document.getElementById("form-title").textContent = isLogin ? "Login" : "Sign Up";
-            document.getElementById("email").style.display = isLogin ? "none" : "block";
-            document.getElementById("submit-btn").textContent = isLogin ? "Login" : "Sign Up";
-            document.querySelector(".switch-btn").textContent = isLogin ? "Don't have an account? Sign Up" : "Already have an account? Login";
-            
-            // Update welcome messages
-            document.getElementById("welcome-title").textContent = isLogin ? "Welcome back!" : "Welcome to our bookstore";
-            document.getElementById("welcome-text").textContent = isLogin ? 
-                "We're glad to see you again. Login to access your account." : 
-                "Join our community of book lovers and discover amazing stories.";
-                
-            document.getElementById("popup").classList.add("active");
-        }
-        function closePopup() {
-            document.getElementById("popup").classList.remove("active");
-        }
-        function switchForm() {
-            openPopup(isLogin ? 'signup' : 'login');
-        }
-        function toggleMenu() {
-            const menuList = document.getElementById("list");
-            menuList.classList.toggle("active");
-            
-            // Toggle dropdown menus
-            const dropdowns = document.querySelectorAll('.dropdown');
-            dropdowns.forEach(dropdown => {
-                dropdown.classList.remove('active');
-            });
-        }
-    </script>   
+    <script src="/store.js"></script>
 </body>
 </html>

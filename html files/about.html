@@ -3,34 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Us - PurpleBook</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css files/about.css">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="main-logo">
-            <img src="/image/Untitled991 design.gif" alt="a book">
-            <img id="logo" src="/image/purple book.png" alt="page logo">
+                <img src="/image/Untitled991 design.gif" alt="a book">
+                <img id="logo" src="/image/purple book.png" alt="page logo">
             </div>
             <div id="list">
-                <a href="#">Home</a>
-            <div class="drop">
-                <a class="dropdown" href="#">categories</a>
-                <div class="drop-content">
-                    <a href="/html files/catigories/novels.html" target="_blank">Novels</a>
-                    <a href="/html files/catigories/history.html"target="_blank">History</a>
-                    <a href="/html files/catigories/educational.html"target="_blank">Educational</a>
-                    <a href="/html files/catigories/self-development.html"target="_blank">Self-Development</a>
-                    <a href="/html files/catigories/kids.html"target="_blank">Kids</a>
+                <a href="/html files/main page - Copy.html" class="nav-link">Home</a>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#">Categories <i class='bx bx-chevron-down'></i></a>
+                    <div class="dropdown-menu">
+                        <a href="/html files/catigories - Copy/novels.html" target="_blank">Novels</a>
+                        <a href="/html files/catigories - Copy/history.html" target="_blank">History</a>
+                        <a href="/html files/catigories - Copy/educational.html" target="_blank">Educational</a>
+                        <a href="/html files/catigories - Copy/self-development.html" target="_blank">Self-Development</a>
+                        <a href="/html files/catigories - Copy/kids.html" target="_blank">Kids</a>
+                    </div>
                 </div>
+                <a href="/html files/about.html" target="_blank" class="nav-link">About</a>
             </div>
-            <a href="about.html" target="_blank">About</a>
-            </div>
-            <nav> 
-                <a href="log page.html">sign up</a>
-                <a href="#">log in</a>
+            <nav class="auth-buttons"> 
+                <button class="login-btn" onclick="openPopup('login')">Log in</button>
+                <button class="signup-btn" onclick="openPopup('sign up')">Sign up</button>
             </nav>                  
         </div>
     </header>
+    <div class="body" id="popup">
+        <div class="content">
+            <div class="form-decoration">
+                <img src="/image/for form.png" alt="Book decoration">
+                <div class="welcome-message">
+                    <h3 id="welcome-title">Welcome to our bookstore</h3>
+                    <p id="welcome-text">Join our community of book lovers and discover amazing stories.</p>
+                </div>
+             </div>
+             <form target="_blank" class="modern-form">
+                <button id="close" onclick="closePopup()"><i class='bx bx-window-close'></i></button>
+                 <h2 id="form-title">Sign up</h2>
+                 <div class="input-box">
+                     <input type="text" placeholder="Username" required>
+                     <i class='bx bxs-user'></i>
+                 </div>      
+                 <div class="input-box" id="email" style="display: none;">
+                     <input type="email" placeholder="Your email" required>
+                     <i class='bx bxs-envelope'></i>
+                 </div>    
+                 <div class="input-box">
+                     <input type="password" placeholder="Password" required>
+                     <i class='bx bxs-lock-open'></i>
+                 </div>  
+                 <div id="check">
+                         <button class="switch-btn" onclick="switchForm()">Already have an account? Log in</button>
+                 </div>   
+                 <button id="submit-btn" type="submit">Sign up</button>  
+             </form>
+        </div>
+     </div>     
+
+    <main class="about-container">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>About Us – Welcome to PurpleBook</h1>
+                <p class="hero-subtitle">Every bookstore has a story. Here's ours...</p>
+            </div>
+        </section>
+
+        <section class="story-section">
+            <div class="story-content">
+                <p class="story-text">Once upon a time—not in a castle, but in a cozy corner filled with the scent of paper and ink—a tiny idea was born: What if we created a place where stories come to life and readers feel at home?</p>
+                <p class="story-text">That idea became PurpleBook, your neighborhood escape hatch into imagination, adventure, and discovery.</p>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="feature-card">
+                <i class='bx bx-book-heart'></i>
+                <h2>More Than Just Books</h2>
+                <p>We believe that books aren't just things we read—they're friends, teachers, time machines, and quiet companions on rainy days. Whether you're hunting for dragons, diving into deep philosophy, or just trying to figure out how sourdough works, we've got something for your shelf and your soul.</p>
+            </div>
+        </section>
+
+        <section class="offerings-section">
+            <h2>What We Offer</h2>
+            <div class="offerings-grid">
+                <div class="offering-card">
+                    <i class='bx bx-book-open'></i>
+                    <h3>Curated Collections</h3>
+                    <p>Fiction, non-fiction, children's books, and hidden gems</p>
+                </div>
+                <div class="offering-card">
+                    <i class='bx bx-star'></i>
+                    <h3>Special Editions</h3>
+                    <p>Limited edition and signed copies for collectors</p>
+                </div>
+                <div class="offering-card">
+                    <i class='bx bx-package'></i>
+                    <h3>Monthly Boxes</h3>
+                    <p>Book mail is the best mail!</p>
+                </div>
+                <div class="offering-card">
+                    <i class='bx bx-group'></i>
+                    <h3>Community Events</h3>
+                    <p>Workshops, book clubs, and shared reading experiences</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="community-section">
+            <div class="community-content">
+                <h2>A Place for Every Reader</h2>
+                <p>We're passionate about inclusivity and diversity. Our shelves are filled with voices from all over the world, and we're constantly seeking new stories that reflect the beautiful complexity of life.</p>
+                <p>Whether you're a seasoned bookworm or just beginning your reading journey, we're here to help you find your next favorite read.</p>
+            </div>
+        </section>
+
+        <section class="visit-section">
+            <div class="visit-content">
+                <h2>Come Hang Out!</h2>
+                <p>Visit our store in person (yes, we have comfy chairs and coffee!) or explore our online world. Follow us on social media for bookish banter, staff picks, and surprise giveaways.</p>
+                <p class="closing-text">So go ahead. Wander through our pages. Get lost. Get found.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About PurpleBook</h3>
+                <p>Your premier destination for discovering and purchasing books across all genres. We bring the world of literature to your fingertips.</p>
+                <div class="social-links">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-pinterest'></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="/html files/catigories - Copy/novels.html">Novels</a></li>
+                    <li><a href="/html files/catigories - Copy/history.html">History</a></li>
+                    <li><a href="/html files/catigories - Copy/educational.html">Educational</a></li>
+                    <li><a href="/html files/catigories - Copy/self-development.html">Self-Development</a></li>
+                    <li><a href="/html files/catigories - Copy/kids.html">Kids</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/html files/main page.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Best Sellers</a></li>
+                    <li><a href="#">Special Offers</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul class="contact-info">
+                    <li><i class='bx bx-map-pin'></i> 123 Book Street, Reading City</li>
+                    <li><i class='bx bx-phone'></i> +1 (555) 123-4567</li>
+                    <li><i class='bx bx-envelope'></i> info@purplebook.com</li>
+                </ul>
+                
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 PurpleBook. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+    <script src="/store.js"></script>
 </body>
 </html>

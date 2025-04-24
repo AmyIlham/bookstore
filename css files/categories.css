@@ -83,7 +83,7 @@ header {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #f5ddf5;
+    background-color: #f3ebf3;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     padding: 15px 0;
@@ -464,9 +464,9 @@ section:last-of-type {
 }
 #history .i3 {
     position: relative;
-    width: 100px;
-    left: 120px;
-    top: 30px;
+    width: 150px;
+    left: 80px;
+    top: 45px;
 }
 #education{
     background-image: url(/image/Untitled\ designbol.svg);
